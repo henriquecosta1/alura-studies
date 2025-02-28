@@ -11,7 +11,6 @@ class Formulario extends React.Component<{
         tempo: "00:00"
     }
     
-
     adicionarTarefa(evento: React.FormEvent<HTMLFormElement>) {
         evento.preventDefault();
         this.props.setTarefas(tarefasAntigas => [...tarefasAntigas,  {...this.state}])
